@@ -1,23 +1,109 @@
-/* цвет основного текста #000000 */
-/* вторичный цвет текста  rgba(0, 0, 0, 0.8);
- */
+/* цвет основного текста: #757575 */
+/* вторичный цвет текста title: #212121 */
+/* акцент #2196F3 */
 /* белый #FFFFFF  */
-/* акцент #18A0FB */
-/* вторичный цвет фона #F5F5F5; */
+/*Mail+tel #FFFFFF 60 %*/
+/*background: #F5F4FA; */
+/* вторичный цвет фона Hero+Footer #2F303A; */
 
 :root {
-  --primary-text-color: rgba(0, 0, 0, 0.8);
-  --title-text-color: #000000;
-  --accent-color: #18a0fb;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --hero-footer-color: #2f303a;
 }
 
 body {
-  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 
-  font-family: Montserrat, sans-serif;
-  letter-spacing: -0.015em;
-  font-size: 18px;
-  line-height: 1.67;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Logo */
+.logo {
+  color: #000000;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: #2196f3;
+}
+
+/* Site nav + Kontakt nav */
+.site-nav .link,
+.kontakt-nav .link {
+  color: var(--title-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.kontakt-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site nav */
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Kontakt nav */
+.kontakt-nav .link {
+  color: var(--primary-text-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: var(--hero-footer-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+
+  cursor: pointer;
 }
