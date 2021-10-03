@@ -2,6 +2,7 @@
 /* вторичный цвет текста title: #212121 */
 /* акцент #2196F3 */
 /* белый #FFFFFF  */
+
 /*Mail+tel #FFFFFF 60 %*/
 /*background: #F5F4FA; */
 /* вторичный цвет фона Hero+Footer #2F303A; */
@@ -11,7 +12,6 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --hero-footer-color: #2f303a;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 /* Logo */
 .logo {
-  color: #000000;
+  color: #2196f3;
 
   font-family: Raleway;
   font-style: normal;
@@ -39,8 +39,8 @@ body {
   text-decoration: none;
 }
 
-.logo-accent {
-  color: #2196f3;
+.logo-header {
+  color: #000000;
 }
 
 /* Site nav + Kontakt nav */
@@ -48,7 +48,7 @@ body {
 .kontakt-nav .link {
   color: var(--title-text-color);
 
-  font-family: Roboto;
+  font-family: Roboto; sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -79,9 +79,12 @@ body {
 }
 
 /* Hero */
+.hero {
+  background-color: #2f303a;
+}
+
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--hero-footer-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -92,10 +95,12 @@ body {
 }
 
 /* Button */
-.button.primary {
+.button-hero {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
+  font-family: Roboto; sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -106,4 +111,106 @@ body {
   text-decoration: none;
 
   cursor: pointer;
+}
+
+/* Title sections */
+.none-title {
+  display: none;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+/* Benefits */
+.benefit {
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+/* Produkts */
+.produkts,
+.team {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Team */
+.team-studio {
+  background: #f5f4fa;
+}
+
+.employee-description,
+.employee {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.employee {
+  font-weight: 500;
+}
+
+/* Portfolio */
+.example {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-description {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Filter Portfolio */
+.fiter-button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+
+  font-family: Roboto; sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.fiter-button:focus,
+.fiter-button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer,
+.address {
+  color: var(--primary-white-color);
+}
+
+.kontakts {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: Roboto; sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.kontakts:hover,
+.kontakts:focus {
+  color: var(--accent-color);
 }
