@@ -45,9 +45,10 @@ body {
   color: #000000;
 }
 
-/* Site nav + Kontakt nav */
+/* Site-nav + Kontakt-header + Kontakt-footer */
 .site-nav .link,
-.kontakt-nav .link {
+.kontakt-header .link,
+.kontakt-footer .link {
   color: var(--title-text-color);
 
   font-family: var(--main-font);
@@ -60,9 +61,11 @@ body {
 }
 
 .site-nav .link:hover,
-.kontakt-nav .link:hover,
 .site-nav .link:focus,
-.site-nav .link:focus {
+.kontakt-header .link:hover,
+.kontakt-header .link:focus,
+.kontakt-footer .link:hover,
+.kontakt-footer .link:focus {
   color: var(--accent-color);
 }
 
@@ -76,7 +79,7 @@ body {
 }
 
 /* Kontakt nav */
-.kontakt-nav .link {
+.kontakt-header .link {
   color: var(--primary-text-color);
 }
 
@@ -207,19 +210,10 @@ body {
   color: var(--primary-white-color);
 }
 
-.kontakts {
+.kontakt-footer .link {
   color: rgba(255, 255, 255, 0.6);
 
-  font-family: var(--main-font);
-  font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.kontakts:hover,
-.kontakts:focus {
-  color: var(--accent-color);
 }
